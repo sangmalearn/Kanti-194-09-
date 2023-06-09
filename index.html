@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firoj Kanti Ruram 194/09</title>
+</head>
+<body>
+
+  <form action="">
+    <label for="firstName">First Name</label><br>
+    <input type="text" name="firstName" id="firstName"><br> 
+    <label for="lastName">First Name</label><br>
+    <input type="text" name="lastName" id="lastName" ><br> 
+    <label for="student_dob">Date of birth</label><br>
+    <input type="date" name="student_dob" id="student_dob" ><br> 
+    <label for="student_email">Email</label><br>
+    <input type="email" name="student_email" id="student_email" ><br> 
+    <label for="student_phone">Phone number</label><br>
+    <input type="number" name="student_phone" id="student_phone" ><br>
+    <label for="s_gender">Gender</label><br>
+    <label for="s_gender_male">Male</label>
+    <input type="radio" name="s_gender_male" id="s_gender_male"> 
+    <label for="s_gender_female">Female</label>
+    <input type="radio" name="s_gender_female" id="s_gender_female"><br>
+    <label for="nationality">nationality</label><br>
+      <select name="nationality" id="nationality">
+        <option value="bangladeshi">Bangladeshi</option>
+        <option value="india">India</option>
+        <option value="italy">Italy</option>
+      </select><br>
+      <label for="bgroup">Blood group</label><br>
+      <select name="bgroup" id="bgroup">
+        <option value="a+">A + </option>
+        <option value="a-">A -</option>
+        <option value="b+">B +</option>
+        <option value="b-">B -</option>
+      </select><br>
+      <label for="s_religion">Religion</label><br>
+      <select name="s_religion" id="s_religion">
+        <option value="muslim">Muslim</option>
+        <option value="hindu">Hindu</option>
+        <option value="christian">Christian</option>
+      </select><br>
+      <label for="s_nid">Student NID</label><br>
+      <input type="number" name="s_nid" id="s_nid"><br>
+      <label for="address">Present address</label><br>
+      <textarea name="address" id="address" cols="30" rows="5"></textarea><br>
+      <label for="per_address">Permanent address</label><br>
+      <textarea name="per_address" id="per_address" cols="30" rows="5"></textarea><br>
+      <label for="student_info">Student information</label><br>
+      <label for="student_pic">Student Picture</label><img src="./assets/img/kanti.jpg" alt=""><br>
+      <input type="file" name="student_pic" id="student_pic"><br>
+      <label for="last_school">Last school attended</label>
+      <input type="text" name="last_school" id="last_school"> <br>
+      <label for="last_class">Last class</label>
+      <input type="text" name="last_class" id="last_class"><br>
+      <label for="last_year">Year</label>
+      <input type="date" name="last_year" id="last_year"><br>
+      <label for="s_living_with">Student living with</label><br>
+      <label for="b_parent">Both parents</label><input type="checkbox" name="b_parent" id="b_parent">
+      <label for="wmother">Mother</label><input type="checkbox" name="wmother" id="wmother">
+      <label for="wfather">Father</label><input type="checkbox" name="wfather" id="wfather"><br>
+      <label for="medication">Name of Medication</label><br>
+      <input type="text" name="medication" id="medication"><br>
+      <label for="sib_name">Brother's / Sister's</label><br>
+      <input type="text" name="sib_name" id="sib_name"><br>
+      <label for="other_info">Any other information</label><br>
+      <textarea name="other_info" id="other_info" cols="30" rows="10"></textarea><br>
+
+      <button type="submit" onclick="saveStudentinto()" class="sub_btn">Submit</button>
+
+  </form>
+
+  <script>
+    function saveStudentinto(){
+
+      document.write("<h1>Student Information</h1>")
+
+      var firstName = "Firoj Kanti";
+      var lastName = "Ruram";
+      var student_dob = "12 March 1970";
+      var student_email = "kantisangma@gmail.com";
+      var student_phone = "01787 618035";
+      var s_gender = "Male";
+      var nationality = "Bangladeshi";
+      var bgroup = "O-";
+      var s_religion = "Christian";
+      var s_nid = "4779445766";
+      var address = "Ka 50/8C, Kalachandpur, Gulshan, Dhaka";
+      var per_address = "Dhubaura, Myemsingh";
+      var student_pic = "xxxxx";
+      var last_school = "Birisiri PC Nol Memorial High School";
+      var last_class = "Class 10";
+      var last_year = 1984;
+      var b_parent = "Both parents";
+      var medication = "None";
+      var sib_name = "Brother: Jashim, Sister : Rumi";
+      var other_info = "not applicable";
+
+      document.write(
+        "First name: " + firstName + 
+        "Last name: " + lastName +
+        "<br>Date of birth: " + student_dob + 
+        "Student email: " + student_email +
+        "<br>Phone: " + student_phone +
+        "Gender: " + s_gender +
+        "<br>Nationality: " + nationality +
+        "  Blood group: " + bgroup +
+        "<br>Religion: " + s_religion +
+        "Student NID: " + s_nid +
+        "<br>Present address: " + address +
+        "<br>Permanent address: " + per_address +
+        "<br>Student picture: " + student_pic +
+        "<br>Last school attented: " + last_school + 
+        " Last class: " + last_class +
+        " Last year: " + last_year +
+        "<br>Student living with: " + b_parent +
+        "<br>Name of medication: " + medication +
+        "<br>Sibling name: " + sib_name +
+        "<br>Any other information: " + other_info 
+        );
+
+    }
+
+  </script>
+  
+</body>
+</html>
