@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="action-email.php">
+        <div class="form-1">
+             
+                <div class="col-12">
+                    <label for="full_name">1. Surname (As per birth certificate): </label><br>
+                    <input type="text" id="full_name" name="full_name"  >
+                </div> 
+                <div class="col-12">
+                    <label for="first_name">2. Student Name</label><br>
+                    <input type="text" id="first_name" name="first_name"  ><br>
+                </div> 
+
+            
+            <div class="col-6">                                   
+                    <label for="academic_year">Academic Year</label><br>
+                    <select name="academic_year" id="academic_year" >
+                        <option value="20192020">2019-2020</option>
+                        <option value="20202021">2020-2021</option>
+                        <option value="20212022">2021-2022</option>
+                        <option value="20222023">2022-2023</option>
+                        <option value="20232024">2023-2024</option>
+                    </select>
+                </div>   
+                <div class="col-6">                                   
+                    <label for="application_number">Application Number:</label><br>
+                    <input type="text" id="application_number" name="application_number" placeholder="43232892005" >
+                </div>   
+        
+                <div class="col-6">                                   
+                    <label for="student_dob">Date of birth: </label><br>
+                    <input type="date" id="student_dob" name="student_dob"  >
+                </div>   
+                <div class="col-6">                                   
+                    <label for="s_gender" >Gender:</label><br>
+                    <label for="sgender_male">Male</label>
+                    <input type="radio" id="sgender_male" name="sgender_male" style="width:20px">
+                    <label for="sgender_female">Female</label>
+                    <input type="radio" id="sgender_female" name="sgender_female" style="width:20px">
+                </div>
+                <div class="col-6">                                   
+                    <label for="religion">5. Religion:</label><br>
+                    <select name="religion" id="religion">
+                        <option value="muslim">Muslim</option>
+                        <option value="christian">Christian</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="vuddhist">Buddhist</option>
+                    </select>
+                </div>   
+                <div class="col-6">                                   
+                    <label for="nationality">6. Nationality: </label><br>
+                    <select name="nationality" id="nationality"  >
+                        <option value="bangladeshi">Bangladeshi</option>
+                        <option value="indian">Indian</option>
+                        <option value="bhutani">Bhutani</option>
+                        <option value="nepali">Nepali</option>
+                        <option value="pakistani">Pakistani</option>
+                        <option value="thai">Thai</option>
+                        <option value="tarkish">Tarkish</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="sweedies">Sweedies</option>
+                        <option value="russian">Russian</option>
+                        <option value="british">British</option>
+                        <option value="american">American</option>
+                    </select>
+                </div> 
+        
+            
+                <div class="col-6">                                   
+                    <label for="faculty">7. Faculty Applied for:</label><br>
+                    <select name="faculty" id="faculty"  >
+                        <option value="bbs">BBA</option>
+                        <option value="accounting">Accounting</option>
+                        <option value="economics">Economics</option>
+                        <option value="bss">BSS</option>
+                        <option value="cse">CSE</option>
+                    </select>
+                </div>   
+                <div class="col-6">                                   
+                    <label for="bgroup">8. Blood Group:</label><br>
+                    <select name="bgroup" id="bgroup" >
+                        <option value="a+">A+</option>
+                        <option value="a-">A-</option>
+                        <option value="b+">B+</option>
+                        <option value="b-">B-</option>
+                        <option value="o+">O+</option>
+                        <option value="o-">O-</option>                                            
+                    </select>
+                </div> 
+                <div class="col-12">                                   
+                    <label for="s_nid">National ID</label><br>
+                    <input type="text" name="s_nid" id="s_nid" >
+                </div> 
+        
+                <div class="col-6">                                   
+                    <label for="paddress">Present Address:</label><br>
+                    <textarea name="paddress" id="paddress" cols="30" rows="5" placeholder="Write your address here..."></textarea>
+                </div> 
+                <div class="col-6">                                   
+                    <label for="per_address">Permanent Address:</label><br>
+                    <textarea name="per_address" id="paddress" cols="30" rows="5" placeholder="Permanent address here..."></textarea>
+                </div>         
+                
+                <div class="col-6">                                   
+                    <label for="contact_number">Contact Number:</label><br>
+                    <input type="text" id="contact_number" name="contact_number" placeholder="+880..." >
+                </div>
+            
+                <div class="col-6">                                   
+                    <label for="student_email">Email:</label><br>
+                    <input type="student_email" id="email" name="student_email" placeholder="your@email" >
+                </div>                   
+        
+       
+                                                
+                           
+            <div class="col-12">                                   
+                <label for="last_school">14. School last attended</label><br>
+                <input type="text" name="last_school" id="last_school" >
+            </div> 
+    
+            <div class="col-6">                                   
+                <label for="last_class">Class</label><br>
+                <input type="text" name="last_class" id="last_class" >
+            </div> 
+            <div class="col-6">                                   
+                <label for="last_year">Year</label><br>
+                <input type="date" name="last_year" id="last_year" >
+            </div> 
+    
+            <div class="col-12">
+                <label for="sliving">Student living with </label><br>
+                <label for="bparent" class="if-applicable"><input type="checkbox" id="bparent" name="bparent">Both parents</label>
+                <label for="wmother" class="if-applicable"><input type="checkbox" id="wmother" name="wmother">Mother</label>
+                <label for="wfather" class="if-applicable"><input type="checkbox" id="wfather" name="wfather">Parents Separated</label>
+                <label for="wguardian" class="if-applicable"><input type="checkbox" id="wguardian" name="wguardian">Father Remarried</label>                                            
+                
+            </div>                                 
+                        <div class="col-12">
+                <label for="sib_name">Brother's / Sister's Name </label><br>
+                <input type="text" name="sib_name" id="sib_name" >
+            </div>   
+                   
+            <div class="col-12">
+                <label for="other_info">23. Any other relevant information </label><br>
+                <textarea name="other_info" id="other_info" cols="30" rows="5" ></textarea>
+            </div>              
+                                            
+            
+            <input type="submit" value="Save" onclick="saveStudentinto()">
+        </div>
+                        
+    </form>
+
+    <h4 id="show"></h4>
+
+    <script>
+        function saveStudentinto(){
+    
+          var fullName = document.getElementById("full_name").value;
+          var firstName = document.getElementById("first_name").value;
+        //   var academicYear = document.getElementById("academic_year").value;
+        //   var applicationNumber = document.getElementById("application_number").value;
+        //   var studentDob = document.getElementById("student_dob").value;
+        //   var studentEmail = document.getElementById("student_email").value;
+        //   var contactNumber = document.getElementById("contact_number").value;
+        //   var sGender = document.getElementById("s_gender").value;
+        //   var nationality = document.getElementById("nationality").value;
+        //   var sFaculty = document.getElementById("faculty").value;
+        //   var bGroup = document.getElementById("bgroup").value;
+        //   var sReligion = document.getElementById("religion").value;
+        //   var sNid = document.getElementById("s_nid").value;
+        //   var address = document.getElementById("address").value;
+        //   var perAaddress = document.getElementById("per_address").value;
+        //   var lastSchool = document.getElementById("last_school").value;
+        //   var lastClass = document.getElementById("last_class").value;
+        //   var lastYear = document.getElementById("last_year").value;
+        //   var bParent = document.getElementById("b_parent").value;
+        //   var sibName = document.getElementById("sib_name").value;
+        //   var otherInfo = document.getElementById("other_info").value;
+
+          var printForm = 
+        "First name: " + fullName + 
+        "Last name: " + firstName ;
+        // "<br>Date of birth: " + studentDob + 
+        // "Student email: " + studentEmail +
+        // "<br>Phone: " + contactNumber +
+        // "Gender: " + sGender +
+        // "<br>Nationality: " + nationality +
+        // "  Blood group: " + bGroup +
+        // "<br>Religion: " + sReligion +
+        // "Student NID: " + sNid +
+        // "<br>Present address: " + address +
+        // "<br>Permanent address: " + perAaddress +
+        // "<br>Last school attented: " + lastSchool + 
+        // " Last class: " + lastClass +
+        // " Last year: " + lastYear +
+        // "<br>Student living with: " + bParent +
+        // "<br>Sibling name: " + sibName +
+        // "<br>Any other information: " + otherInfo ;
+
+        document.getElementById("show").innerHTML = printForm;        
+
+    
+        }
+    
+      </script>
+    
+</body>
+</html>

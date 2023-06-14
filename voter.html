@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter validity</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="age">I am voter:</label>
+        <input type="text" name="age" id="age" >
+    </form>
+
+    <button onclick="showVoter()">Check me</button>
+    <h2 id="show"></h2>
+
+    <script>
+       
+
+        function showVoter(){
+            var voterValidity = document.getElementById("age").value;
+
+            if(voterValidity>=18){
+                document.getElementById("show").innerHTML ="Welcome your are voter";
+
+            } else {
+                document.getElementById("show").innerHTML = "Sorry! your age is not valid yet.";
+
+            }
+           
+        }
+
+    </script>
+    
+</body>
+</html>

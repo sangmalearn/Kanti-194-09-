@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+</head>
+<body>
+    <form action="">
+        <label for="first_name">First Name: </label>
+        <input type="text" id="first_name" name="first_name">
+        <label for="last_name">Last Name: </label>
+        <input type="text" id="last_name" name="last_name" ><br>
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" ><br>                                        
+        <label for="application_number">Application Number:</label><br>
+        <input type="text" id="application_number" name="application_number" placeholder="43232892005" >   
+        <label for="student_dob">Date of birth: </label><br>
+        <input type="date" id="student_dob" name="student_dob"  >
+        <label for="s_gender" >Gender:</label><br>
+            <label for="sgender_male">Male</label>
+            <input type="radio" id="sgender_male" name="sgender_male" style="width:20px">
+            <label for="sgender_female">Female</label>
+            <input type="radio" id="sgender_female" name="sgender_female" style="width:20px"><br>
+                                     
+        <label for="s_nid">National ID</label>
+        <input type="text" name="s_nid" id="s_nid" ><br>      
+                                        
+        <label for="address">Present Address:</label>
+        <textarea name="address" id="address" cols="30" rows="5" placeholder="Write your address here..."></textarea><br>
+                                    
+        <label for="per_address">Permanent Address:</label>
+        <textarea name="per_address" id="paddress" cols="30" rows="5" placeholder="Permanent address here..."></textarea><br>
+                                
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" id="contact_number" name="contact_number" placeholder="+880..." ><br>
+                                        
+        <label for="student_email">Email:</label>
+        <input type="student_email" id="email" name="student_email" placeholder="your@email" ><br>
+                                        
+        <label for="last_school">14. School last attended</label>
+        <input type="text" name="last_school" id="last_school" ><br>
+                                    
+        <label for="last_class">Class</label>
+        <input type="text" name="last_class" id="last_class" ><br>
+                                    
+        <label for="last_year">Year</label>
+        <input type="date" name="last_year" id="last_year" ><br>
+
+        <button type="button" onclick="saveName()">Show me</button>
+    </form>
+       
+ <p id="show"></p>
+
+    <script>
+        function saveName(){
+            var firstName = document.getElementById("first_name").value;
+            var lastName = document.getElementById("last_name").value;
+            //var fullName = firstName+lastName;
+            var applicationNumber = document.getElementById("application_number").value;
+            var studentDob = document.getElementById("student_dob").value;
+            var sgenderMale = document.getElementById("sgender_male").value;
+            var sgenderFemale = document.getElementById("sgender_female").value;
+            var studentNid = document.getElementById("s_nid").value;
+
+            var saveAll = "First Name: "+firstName+
+            "Last Name: "+lastName+ 
+            "<br> Application No. : "+applicationNumber+
+            "<br> Date of birth : "+studentDob+
+            "<br> Gender : "+
+            "Male : "+sgenderMale+
+            "<br>Female : "+sgenderFemale+
+            "<br> Student NID : "+studentNid;
+
+            document.getElementById("show").innerHTML=saveAll;
+            
+            //alert(fullName);
+
+        }    
+    </script>    
+       
+</body>
+</html>

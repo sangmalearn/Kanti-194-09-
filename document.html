@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="first_name">First Name: </label>
+        <input type="text" id="first_name" name="first_name">
+        <label for="last_name">Last Name: </label>
+        <input type="text" id="last_name" name="last_name" onchange="saveName()">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" >
+        <button type="button" onclick="saveName()">Show me</button>
+    </form>
+       
+ <p id="show"></p>
+
+    <script>
+        function saveName(){
+            var firstName = document.getElementById("first_name").value;
+            var lastName = document.getElementById("last_name").value;
+            var fullName = firstName+lastName;
+            var saveAll = "First Name: "+firstName+
+            "Last Name: "+lastName;
+
+            document.getElementById("full_name").value=fullName;
+            document.getElementById("show").innerHTML=saveAll;
+            
+            //alert(fullName);
+
+        }    
+    </script>    
+       
+</body>
+</html>
